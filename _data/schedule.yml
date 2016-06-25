@@ -1,0 +1,23 @@
+- 
+  date: "2016-06-24"
+  dateReadable: "July 24"
+  tracks: 
+    - {title: "Windows", color: "#90be4e"}
+    - {title: "Web & Cloud", color: "#03a9f4"}
+    - {title: "Others", color: "#e91e63"}
+  timeslots:
+    - {
+    	startTime: "10:00",
+    	endTime: "10:45",
+    	sessionIds: [001, 001, 001]
+    }
+    - {
+        startTime: "11:00",
+        endTime: "11:45",
+        sessionIds: [001, 404, 001]
+    }
+    - {
+    	startTime: "12:00",
+    	endTime: "11:45",
+    	sessionIds: [001]
+    }

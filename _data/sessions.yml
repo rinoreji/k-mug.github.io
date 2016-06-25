@@ -1,0 +1,21 @@
+-
+  id: 307
+  title: "Coffee Break"
+  place: "Go figure!"
+  service: true
+  description: "The best time to talk with speakers and attendees"
+-
+  id: 503
+  title: "Lunch Break"
+  place: "On your lap!"
+  service: true
+-
+  id: 001
+  title: "Some awesome session"
+  description: "Holly molly this is out of the world and can make things amazing."
+  subtype: presentation
+  speakers: [1]
+  language: en
+  complexity: "Intermediate" 
+  presentation: "https://speakerdeck.com/XXXXXXXXX"
+  video: "//www.youtube.com/embed/vXXXXXXXXXXX"

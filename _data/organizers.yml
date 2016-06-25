@@ -1,0 +1,8 @@
+- 
+  group: "Main organizer"
+  elements: 
+    - {name: "K-MUG", description: "K-MUG - Open and volunteer geek community", link: "http://k-mug", imageUrl: "kmug.svg"}
+- 
+  group: "Co-organizers"
+  elements: 
+    - {name: "Orion India Systems Pvt. Ltd.", description: "Orion India Systems Pvt. Ltd. - a company", link: "http://orioninc.com", imageUrl: "orion.png"}

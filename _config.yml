@@ -1,0 +1,229 @@
+# Plugins
+gems:
+- jekyll-sitemap
+safe: true
+
+# Build Settings
+markdown: kramdown
+permalink: pretty
+exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
+
+
+# Site Settings
+title: "Kerala Microsoft Users Group"
+email: "admin@k-mug.org"
+description: "K-MUG is one of the most successful technical communities in India, which focus on Microsoft Technologies."
+baseurl: ""
+url: "https://k-mug.github.io"
+permalink: "/blog/:title"
+googleAnalyticsTrackingId: "UA-XXXXXXXX-X"
+googleAnalyticsSiteUrl: "k-mug.github.io"
+siteVerification: "XXXXXXXXXXXXXX"
+
+# Organizer Info
+organizerName: "Kerala Microsoft Users Group"
+organizerAlternateName: "K-MUG"
+organizerDescription: "K-MUG is one of the most successful technical communities in India, which focus on Microsoft Technologies. We create exciting projects and share experience about Microsoft technology with passion."
+organizerEmail: "admin@k-mug.org"
+organizerLogo: "/img/seo/organizer-logo.png"
+organizerLink: "http://kmug.org/"
+
+# Head
+metaKeywords: "event, kmug, k-mug, devfest, microsoft, programming, windows, azure, developers, kerala, technical, community"
+twitterAccount: "@XXXXXX"
+socialImageSrcGooglePlus: "/img/seo/sharing-google-plus.png"
+socialImageSrcTwitter: "/img/seo/sharing-twitter.png"
+socialImageSrcFacebook: "/img/seo/sharing-facebook.png"
+
+# Documents
+c4pUrl: "http://goo.gl/forms/4SSB3Jg94pYTPcjg1"
+c4sponsorsUrl: "XXXXXXXXXXXXXXXXXXX"
+
+
+# Navigation
+navigationLinks:
+ - {permalink: "/", text: "Home"}
+ - {permalink: "/blog/", text: "Blog"}
+ - {permalink: "/schedule/", text: "Schedule"}
+ - {permalink: "/speakers/", text: "Speakers"}
+ - {permalink: "/team/", text: "Team"}
+ - {permalink: "/logistics/", text: "Logistics"}
+bottomNavigationLinks:
+ - {link: "http://goo.gl/forms/4SSB3Jg94pYTPcjg1", text: "Take a session"}
+rightNavigationButtons:
+ - {link: "http://goo.gl/forms/4SSB3Jg94pYTPcjg1", text: "Take a session"}
+
+# Hero Block
+heroImage: "hero.jpg"
+heroTitle: "<typeout>"
+eventDate: "July, 2016"
+typeoutTextValues: '"", "Kerala Microsoft Users Group", "Kochi", "Trivandrum", "Kozhikode"'
+typeoutFallback: "Kerala Microsoft Users Group"
+heroButtons:
+ - {link: "http://goo.gl/forms/4SSB3Jg94pYTPcjg1", text: "Take a session"}
+ - {permalink: "/#tickets", text: "Get your tickets"}
+
+# About Block
+aboutTitle: "About K-MUG"
+aboutBlock:
+ - {title: "Conference", image: "conference.jpg", text: "The biggest Microsoft related event in the country carefully crafted for you by K-MUG! Awesome speakers and lots of fun!" }
+ - {title: "Workshops", image: "workshop.jpg", text: "Full-day of workshops, hands-on experience, hacking and debugging. Come and tame your favourite technology!" }
+ - {title: "Meetups", image: "meetups.jpg", text: "Half-day morning meetups! Want to network with some MVPs? Grab your cards and join our network!" }
+
+# Statistic Block
+statisticBlockImage: "statistic.jpg"
+statisticBlock:
+ - {count: "1000", specialCharacter: "+", info: "attendees", detail: "from everywhere"}
+ - {count: "200", specialCharacter: "+", info: "hours", detail: "of K-MUG since 2006"}
+ - {count: "40", specialCharacter: "+", info: "speakers", detail: "from Kerala and beyond"}
+ - {count: "9", specialCharacter: "", info: "MVPs", detail: "Our valuable gems"}
+
+# Latest News Block
+latestNewsTitle: "Latest news"
+
+# Rockstar Speakers Block
+rockstarSpeakersImage: "rockstar-speakers.jpg"
+rockstarSpeakersCount: 4
+rockstarSpeakersTitle: "Rockstar speakers"
+rockstarSpeakersButtonText: "See all speakers"
+
+# Location Block
+locationBlockTitle: "Location"
+eventLocationName: "Orion India Systems, Meeting Hall"
+eventLocationLink: "http://k-mug.org/logistics/"
+eventStreetAddress: "103, Tejomaya"
+eventAddressLocality: "Infopark, Kochi"
+eventAddressLocalityRegion: "Kerala"
+eventPostalCode: "682042"
+eventAddressCountry: "India"
+eventStartTime: "2016-06-23T08:00"
+eventDoorTime: "09:00"
+eventEndTime: "2016-12-30T18:00"
+eventPlaceCoordinates: "10.010003, 76.365947"
+mapCenterCoordinates: "10.010003, 76.365947"
+mapMobileCenterCoordinates: "10.010003, 76.365947"
+
+# Venue Block
+venueBlockTitle: "Venue"
+venueBigImage: "venue_0.jpg"
+venueSmallImage1: "venue_1.jpg"
+venueSmallImage2: "venue_2.jpg"
+venueSmallImage3: "venue_3.jpg"
+venueTitle: "Athulya Auditorium"
+venueFeatures: ["1 huge screen", "Good enough sound system", "Located directly in Infopark"]
+
+# Tweets Feed Block
+tweetsFeedImage: "twitter-feed.jpg"
+tweetsFeedTitle: "What's Up?"
+twitterHashTag: "KMUG"
+twitterFeed: "http://k-mug.org/tweetledee/favoritesjson.php?c=10&cache_interval=8000"
+
+# Partners Block
+organizersTitle: "Organizers"
+partnersTitle: "Partners"
+partnersC4sponsorsButton: "Become a sponsor"
+
+# Subscribe Block
+subscribeImage: "subscribe.jpg"
+subscribeTitle: "Subscribe for updates"
+subscribeAction: "https://XXXXXXX.us5.list-manage1.com/subscribe/post?u=XXXXXXXXXXXX&amp;id=XXXXXX"
+subscribeInfo: "We will announce more details about our events. Stay tuned!"
+
+# Tickets Block
+ticketsTitle: "Ticket Table"
+ticketsInfo: "Tickets grant access to our meetup hall, coffee brakes, maybe-lunch and maybe-party. Accommodation is definitely NOT included in the ticket and come on we can't booze always."
+ticketsOffers:
+ -
+  name: "UG Meeting Ticket"
+  price: "0"
+  priceCurrency: "Rs."
+  ticketsNumber: "50"
+  ribbon: "Click me!"
+  featured: true
+  buyButtonLink: "http://www.eventbrite.com/o/kerala-microsoft-users-group-101822805"
+  buyButtonText: "Buy Now"
+  additionalInfo: "Requires a valid ID at the security check in. Without ID at the check in, we might have to code it out to make you eligible for an entry."
+  ticketContentList: ["Lot's of Technology know-how'", "Network with our MVPs", "Snacks (Coffeeee!!!)"]
+  validFrom: "2016-06-01T00:00"
+  validThrough: "2016-12-30T23:59"
+  disabled: false
+  soldOut: false
+  soldOutText: "Sold Out"
+
+# Footer
+socialLinks:
+ - {link: "https://plus.google.com/b/XXXXXXXXXXXXXX", icon: "google-plus"}
+ - {link: "https://twitter.com/k_mug", icon: "twitter"}
+ - {link: "https://facebook.com/TeamKmug/", icon: "facebook"}
+ - {permalink: "/feed.xml", icon: "rss"}
+footerBlocks:
+ -
+  title: "Links"
+  links:
+   - {link: "http://k-mug.org", text: "Kerala Microsoft Users Group"}
+   - {link: "https://msdn.microsoft.com", text: "MSDN"}
+   - {link: "https://technet.microsoft.com/", text: "Technet"}
+   - {link: "https://mva.microsoft.com/", text: "Microsoft Virtual Academy"}
+   - {link: "https://www.technicalcommunity.com", text: "Microsoft Technical Community"}
+ -
+  title: "Contacts"
+  links:
+   - {link: "mailto:admin@k-mug.org", text: "admin@k-mug.org"}
+ -
+  title: "FAQ"
+  links:
+   - {permalink: "/cod/", text: "Code of Conduct"}
+
+# Blog
+blogTitle: "Latest news"
+blogCommentsEnabled: true
+discusShortName: "XXXXXXXXX"
+
+# Speakers List Block
+showSessions: true
+
+# Team Block
+teamBlockTitle: "About us"
+aboutUs: "K-MUG is one of the most successful technical community in India, which focus on Microsoft Technologies. Participation in K-MUG is an excellent, inexpensive way to receive technical content, education and to meet with peers to get more out of the Microsoft platforms, products, technologies, and resources. K-MUG is managed by the K-MUG Community Council (CC) , and more details about the CC be located here."
+
+# Logistics Find Way Block
+findWayTitle: "Find your way here"
+findWayDistance: "Distance"
+findWayDriving: "DRIVING"
+findWayWalking: "WALKING"
+findWayBicycling: "BICYCLING"
+findWayTransit: "TRANSIT"
+findWayFindFlight: "Find Flight"
+logisticsMapCenterCoordinates: "10.010003, 76.365947"
+logisticsMapMobileCenterCoordinates: "10.010003, 76.365947"
+logisticsMapAutoDirections: false
+
+# Logistics Direction Details Block
+directionDetailsImage: "direction-details.jpg"
+directionDetailsTitle: "Get around Kochi"
+directionDetailsCards:
+ - {title: "From the Airport", information: 'Airport is pretty close. It is easily reachable by car, public transport or taxi. More information is available at <a href="http://cial.aero/">airport website</a>.'}
+ - {title: "Public Transit", information: 'Well we have KSRTC and the private guys. Moreover, you can use uber or ola to make it easy.'}
+ - {title: "Hotels", information: 'Cochin has lots of great hotels and hostels. We think you should Bing.'}
+directionDetailsWideCards:
+ -
+  title: "Questions?"
+  subCards:
+   -
+    title: "Hotels"
+    links:
+     - {link: "http://www.marriott.com/hotels/travel/cokmc-kochi-marriott-hotel/", text: "Marriot"}
+     - {link: "http://www.lemeridienkochi.com/", text: "Le Meridian"}
+     - {link: "https://www.google.co.in/search?q=hotels+in+cochin", text: "Bla bla"}
+   -
+    title: "Registration"
+    links:
+     - {link: "http://www.meetup.com/Kerala-Microsoft-Technology-Meetup/", text: "Meetup"}
+     - {link: "www.eventbrite.com/o/kerala-microsoft-users-group-101822805", text: "EventBright"}
+   -
+    title: "Misc"
+    links:
+     - {link: "https://google.com", text: "Laptop"}
+     - {link: "https://google.com", text: "Business Cards"}
+     - {link: "https://google.com", text: "Whatever!"}
+

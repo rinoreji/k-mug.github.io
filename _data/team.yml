@@ -1,0 +1,26 @@
+- 
+  id: 0
+  name: "XXXXXXXX"
+  surname: "XXXXXXXX"
+  title: "XXXXXXXX"
+  thumbnailUrl: xxx.jpg
+  team: true
+  ribbon: 
+    - {abbr: "K-MUG", title: "Kerala Microsoft Users Group"}
+  social: 
+    - {name: "google-plus", link: "https://google.com/+XXXXXXXX"}
+    - {name: "twitter", link: "https://twitter.com/XXXXXXXX"}
+    - {name: "github", link: "https://github.com/XXXXXXXX"}
+    - {name: "site", link: "http://XXXXXXXX.com/"}
+- 
+  id: 2
+  name: "XXXXXXXX"
+  surname: "XXXXXXXX"
+  title: "XXXXXXXX"
+  thumbnailUrl: xxx.jpg
+  subTeam: true
+  social: 
+    - {name: "google-plus", link: "https://google.com/+XXXXXXXX"}
+    - {name: "twitter", link: "https://twitter.com/XXXXXXXX"}
+    - {name: "github", link: "https://github.com/XXXXXXXX"}
+    - {name: "site", link: "http://XXXXXXXX.com/"}

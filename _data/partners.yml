@@ -1,0 +1,9 @@
+- 
+  group: "General sponsor"
+  elements: 
+    - {name: "Microsoft", description: "Microsoft", link: "https://www.microsoft.com", imageUrl: "microsoft.svg"}
+- 
+  group: "With support of"
+  elements: 
+    - {name: "Orion India Systems Pvt. Ltd.", description: "Orion India Systems Pvt. Ltd.", link: "https://www.orioninc.com/", imageUrl: "orion.png", width: "120px"}
+    - {name: "INETA", description: "INETA - Microsoft community", link: "http://ineta.org", imageUrl: "ineta.gif", width: "120px"}

@@ -1,92 +1,162 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Github Page for K-MUG">
-  <meta name="author" content="Anuraj">
-  <title>{{ page.title }}</title>
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <style>
-    html {
-      position: relative;
-      min-height: 100%;
-    }
-    
-    body {
-      margin-bottom: 60px;
-      font-family: 'Open Sans', sans-serif;
-    }
-    
-    .footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      /* Set the fixed height of the footer here */
-      height: 60px;
-      background-color: #f5f5f5;
-    }
-    
-    body > .container {
-      padding: 60px 15px 0;
-    }
-    
-    .container .text-muted {
-      margin: 20px 0;
-    }
-    
-    .footer > .container {
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-    
-    code {
-      font-size: 80%;
-    }
-  </style>
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+{% include head.html %}
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-        aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">K-MUG</a>
-      </div>
-      <div id="navbar" class="navbar-right navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="http://1drv.ms/1Js06TZ">Register</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-      </div>
+    <div id="preloader" class="preloader">
+        <div class="loader-gplus"></div>
     </div>
-  </nav>
-  <div class="container">
-    {{ content }}
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted">Copyright &copy; 2015 Anuraj.P. All rights reserved.</p>
+
+    <div id="st-container" class="st-container disable-scrolling">
+        <div class="st-pusher">
+            <div class="st-content">
+
+                {{ content }} 
+
+                {% include footer.html %}
+
+            </div>
+        </div>
     </div>
-  </footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    {% if page.modal != null %} 
+    	{% include speakers-modals.html %} 
+    {% endif %} 
+
+    {% if page.permalink == '/schedule/' %}
+        {% include sessions-modals.html %} 
+    {% endif %} 
+
+    {% if page.permalink == '/events/' %}
+        {% include sessions-modals.html %} 
+    {% endif %} 
+
+    {% include analytics.html %}
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="{{ "/js/jquery-2.1.1.min.js" | prepend: site.baseurl }}"><\/script>')
+    </script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+    if (typeof($.fn.modal) === 'undefined') {
+        document.write('<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"><\/script>')
+    }
+    </script>
+    <script src="{{ "/js/default.js" | prepend: site.baseurl }}"></script>
+    {% if page.permalink == '/' or page.permalink == '/hackathon/' %}
+    <script>
+        if ($(window).width() > 767) {
+            document.write('<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"><\/script>')
+        } 
+    </script>
+    {% elsif page.permalink == '/logistics/' %}
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry"></script>
+        <script type="text/javascript">
+            var autoDirectionEnabled = {% if site.logisticsMapAutoDirections %} true {% else %} false {% endif %};
+        </script>
+    {% endif %} 
+    <script>
+        Waves.displayEffect();
+        {% if page.permalink == '/' %}
+            if ($(window).width() > 767) {
+                var googleMaps = 'index',
+                    eventPlace = new google.maps.LatLng({{ site.eventPlaceCoordinates | replace:' ','' }}),
+                    centerMap = new google.maps.LatLng({{ site.mapCenterCoordinates | replace:' ','' }}),
+                    mobileCenterMap = new google.maps.LatLng({{ site.mapMobileCenterCoordinates | replace:' ','' }}),
+                    icon = '{{ site.baseurl }}/img/other/map-marker.svg';
+            } else {
+               var staticGoogleMaps = true,
+                eventPlaceCoordinates = '{{ site.eventPlaceCoordinates | replace:' ','' }}',
+                centerMapCoordinates = '{{ site.mapCenterCoordinates | replace:' ','' }}',
+                mobileCenterMapCoordinates = '{{ site.mapMobileCenterCoordinates | replace:' ','' }}',
+                icon = '{{ site.baseurl | prepend: site.url }}/img/other/map-marker.png';
+            }
+            var twitterFeedUrl = '{{ site.twitterFeed }}';
+            $(document).ready(function () {
+                $(function () {
+                    if ($(window).width() > 767) {
+                        $("#typeout-text").typed({
+                            strings: [{{site.typeoutTextValues}}],
+                            typeSpeed: 150,
+                            backDelay: 900,
+                            loop: true
+                        });
+                    }
+                });
+                var rockstarSpeakers = [
+                    {% for speaker in site.data.speakers %}
+                        {% if speaker.rockstar %}
+                        {name: "{{ speaker.name }} {{ speaker.surname }}", company: "{{ speaker.company }}", image: "{{ site.baseurl | append: '/img/people/' | append: speaker.thumbnailUrl }}"}{% if forloop.index != forloop.length %},{% endif %}
+                        {% endif %}
+                    {% endfor %}
+                ];
+                rockstarSpeakers.sort(function() {return 0.5 - Math.random()});
+                if(rockstarSpeakers.length > 0) {
+                    var animationDelay = 1500,
+                        count = Math.min({{ site.rockstarSpeakersCount }}, rockstarSpeakers.length),
+                        colWidth = 12/count;
+                    for(i=0; i<count; i++) {
+                        var clearfix = '<div class="clearfix visible-xs"></div>';
+                        if ((i)%2 != 0) {
+                            clearfix = ""
+                        }
+                        $('#rockstar-speaker-title').after('<div class="col-md-'+ colWidth +' col-xs-6 rockstar-speakers-item animated hiding" data-animation="fadeInUp" data-delay="' + animationDelay +'"><div class="rockstar-speaker"><div class="flow-img img-circle rockstar-speaker-img" style="background-image: url(' + rockstarSpeakers[i].image + ')"></div><div class="name">' + rockstarSpeakers[i].name + '</div><div class="sub">' + rockstarSpeakers[i].company + '</div></div></div>' + clearfix);
+                        animationDelay -= 500;
+                    }
+                }
+            });
+        {% elsif page.permalink == '/logistics/' %}
+            var googleMaps = 'logistics',
+                eventPlace = new google.maps.LatLng({{ site.eventPlaceCoordinates }}),
+                centerMap = new google.maps.LatLng({{ site.logisticsMapCenterCoordinates }}),
+                mobileCenterMap = new google.maps.LatLng({{ site.logisticsMapMobileCenterCoordinates }}),
+                icon = '{{ site.baseurl }}/img/other/map-marker.svg';
+        {% elsif page.permalink == '/hackathon/' %}
+            if ($(window).width() > 767) {
+                var googleMaps = 'hackathon',
+                    eventPlace = new google.maps.LatLng({{ site.hackathonPlaceCoordinates }}),
+                    centerMap = new google.maps.LatLng({{ site.hackathonMapCenterCoordinates }}),
+                    mobileCenterMap = new google.maps.LatLng({{ site.hackathonMapMobileCenterCoordinates }}),
+                    icon = '{{ site.baseurl }}/img/other/map-marker.svg';
+            } else {
+               var staticGoogleMaps = true,
+                eventPlaceCoordinates = '{{ site.hackathonPlaceCoordinates | replace:' ','' }}',
+                centerMapCoordinates = '{{ site.hackathonMapCenterCoordinates | replace:' ','' }}',
+                mobileCenterMapCoordinates = '{{ site.hackathonMapMobileCenterCoordinates | replace:' ','' }}',
+                icon = '{{ site.baseurl | prepend: site.url }}/img/other/map-marker.png';
+            }
+            
+        {% endif %} 
+    </script>
+    <script src="{{ "/js/scripts.min.js" | prepend: site.baseurl }}"></script>
+    {% if page.permalink == '/schedule/' %}
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var navHeight = $('#top-header').height();
+                var headerHeight = $('.track-header').first().height();
+                $('.stick-header').stick_in_parent({sticky_class: 'sticky', offset_top: navHeight});
+                $('.stick-label').stick_in_parent({offset_top: navHeight + headerHeight});
+            });
+        </script>
+    {% endif %}
+    {% if page.permalink == '/events/' %}
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var navHeight = $('#top-header').height();
+                var headerHeight = $('.track-header').first().height();
+                $('.stick-header').stick_in_parent({sticky_class: 'sticky', offset_top: navHeight});
+                $('.stick-label').stick_in_parent({offset_top: navHeight + headerHeight});
+            });
+        </script>
+    {% endif %}
+
+    {% include schema-event.html %}
 </body>
 
 </html>
