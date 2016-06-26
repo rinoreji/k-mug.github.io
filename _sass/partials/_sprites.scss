@@ -4,58 +4,59 @@
     // &.logo-dark {
     // 	background-position: left 0px;
     // }
+
     @media only screen and (min-width: 15em) {
-        &.logo-dark {background-position: left -657px;}
+        &.logo-dark {background-position: left -657px; width: 100px;}
     }
 
     @media only screen and (min-width: 28em) {
-	    &.logo-dark {background-position: left -438px;}
+	    &.logo-dark {background-position: left -438px; width: 262px;}
     }
 
     @media only screen and (min-width: 45em){
-        &.logo-dark {background-position: left -219px;}
+        &.logo-dark {background-position: left 0px; width: 265px;}
     }
 
     @media only screen and (min-width: 60em){
-        &.logo-dark {background-position: left 0px;}
+        &.logo-dark {background-position: left 0px; width: 265px;}
     }
     
     // &.logo-gray {
     // 	background-position: left -135px;
 	// }
     @media only screen and (min-width: 15em) {
-        &.logo-gray {background-position: left -730px;}
+        &.logo-gray {background-position: left -730px; width: 265px;}
     }
 
     @media only screen and (min-width: 28em) {
-	    &.logo-gray {background-position: left -511px;}
+	    &.logo-gray {background-position: left -511px; width: 262px;}
     }
 
     @media only screen and (min-width: 45em){
-        &.logo-gray {background-position: left -292px;}
+        &.logo-gray {background-position: left -73px; width: 265px;}
     }
 
     @media only screen and (min-width: 60em){
-        &.logo-gray {background-position: left -73px;}
+        &.logo-gray {background-position: left -73px; width: 265px;}
     }
 	
     // &.logo-light {
 	//     background-position: left -270px;
 	// }
     @media only screen and (min-width: 15em) {
-        &.logo-light {background-position: left -803px;}
+        &.logo-light {background-position: left -803px; width: 100px;}
     }
 
     @media only screen and (min-width: 28em) {
-	    &.logo-light {background-position: left -584px;}
+	    &.logo-light {background-position: left -584px; width: 262px;}
     }
 
     @media only screen and (min-width: 45em){
-        &.logo-light {background-position: left -365px;}
+        &.logo-light {background-position: left -146px; width: 265px;}
     }
 
     @media only screen and (min-width: 60em){
-        &.logo-light {background-position: left -146px;}
+        &.logo-light {background-position: left -146px; width: 265px;}
     }
 }
 
