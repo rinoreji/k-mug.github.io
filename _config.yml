@@ -1,7 +1,7 @@
 # Plugins
 gems:
 - jekyll-sitemap
-safe: true
+safe: false
 
 # Build Settings
 markdown: kramdown
@@ -73,7 +73,7 @@ aboutBlock:
 # Statistic Block
 statisticBlockImage: "statistic.jpg"
 statisticBlock:
- - {count: "1000", specialCharacter: "+", info: "attendees", detail: "from everywhere"}
+ - {count: "800", specialCharacter: "+", info: "attendees", detail: "from everywhere"}
  - {count: "200", specialCharacter: "+", info: "hours", detail: "of K-MUG since 2006"}
  - {count: "40", specialCharacter: "+", info: "speakers", detail: "from Kerala and beyond"}
  - {count: "9", specialCharacter: "", info: "MVPs", detail: "Our valuable gems"}

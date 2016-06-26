@@ -1,16 +1,68 @@
 .logo {
     background-image: url($logos-sprite);
     background-repeat: no-repeat;
-    &.logo-dark {
-    	background-position: 0 -1px;
+    // &.logo-dark {
+    // 	background-position: left 0px;
+    // }
+    @media only screen and (min-width: 15em) {
+        &.logo-dark {background-position: left -657px;}
     }
-    &.logo-gray {
-    	background-position: 0 -65px;
-	}
-	&.logo-light {
-	    background-position: 0 -131px;
-	}
+
+    @media only screen and (min-width: 28em) {
+	    &.logo-dark {background-position: left -438px;}
+    }
+
+    @media only screen and (min-width: 45em){
+        &.logo-dark {background-position: left -219px;}
+    }
+
+    @media only screen and (min-width: 60em){
+        &.logo-dark {background-position: left 0px;}
+    }
+    
+    // &.logo-gray {
+    // 	background-position: left -135px;
+	// }
+    @media only screen and (min-width: 15em) {
+        &.logo-gray {background-position: left -730px;}
+    }
+
+    @media only screen and (min-width: 28em) {
+	    &.logo-gray {background-position: left -511px;}
+    }
+
+    @media only screen and (min-width: 45em){
+        &.logo-gray {background-position: left -292px;}
+    }
+
+    @media only screen and (min-width: 60em){
+        &.logo-gray {background-position: left -73px;}
+    }
+	
+    // &.logo-light {
+	//     background-position: left -270px;
+	// }
+    @media only screen and (min-width: 15em) {
+        &.logo-light {background-position: left -803px;}
+    }
+
+    @media only screen and (min-width: 28em) {
+	    &.logo-light {background-position: left -584px;}
+    }
+
+    @media only screen and (min-width: 45em){
+        &.logo-light {background-position: left -365px;}
+    }
+
+    @media only screen and (min-width: 60em){
+        &.logo-light {background-position: left -146px;}
+    }
 }
+
+
+
+
+
 .icon {
     display: inline-block;
     width: 16px;
