@@ -52,11 +52,12 @@ layout: compress
     {% if page.permalink == '/' or page.permalink == '/hackathon/' %}
     <script>
         if ($(window).width() > 767) {
-            document.write('<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5k2Hn4MkSeG_msO7YdioZoNrGAe0kqfY"><\/script>')
+            document.write('<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6iofgB9jyEisx1ei5HIgSAIZhH4mD1Ms"><\/script>')
         } 
     </script>
+    <!--key=AIzaSyA6iofgB9jyEisx1ei5HIgSAIZhH4mD1Ms    v=3.exp-->
     {% elsif page.permalink == '/logistics/' %}
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5k2Hn4MkSeG_msO7YdioZoNrGAe0kqfY&libraries=places,geometry"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6iofgB9jyEisx1ei5HIgSAIZhH4mD1Ms&libraries=places,geometry"></script>
         <script type="text/javascript">
             var autoDirectionEnabled = {% if site.logisticsMapAutoDirections %} true {% else %} false {% endif %};
         </script>

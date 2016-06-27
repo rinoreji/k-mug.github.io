@@ -196,7 +196,7 @@ findWayTransit: "TRANSIT"
 findWayFindFlight: "Find Flight"
 logisticsMapCenterCoordinates: "10.010003, 76.365947"
 logisticsMapMobileCenterCoordinates: "10.010003, 76.365947"
-logisticsMapAutoDirections: false
+logisticsMapAutoDirections: true
 
 # Logistics Direction Details Block
 directionDetailsImage: "direction-details.jpg"
