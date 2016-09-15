@@ -5,7 +5,7 @@ date:   2016-06-22 08:00:00
 isStaticPost: false
 ---
 
-We are finally here with a fresh new look and revamped outlook towards making K-MUG the one stop shop for Microsoft technology networking networking. It's been a while since we made plans for the rebranding of K-MUG.
+We are finally here with a fresh new look and revamped outlook towards making K-MUG the one stop shop for Microsoft technology networking. It's been a while since we made plans for the rebranding of K-MUG.
 
 We are indeed excited!
 
