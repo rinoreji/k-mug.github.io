@@ -43,6 +43,7 @@ c4sponsorsUrl: "XXXXXXXXXXXXXXXXXXX"
 # Navigation
 navigationLinks:
  - {permalink: "/", text: "Home"}
+ - {link: "https://k-mug.herokuapp.com/", text: "Slack"}
  - {permalink: "/blog/", text: "Blog"}
  - {permalink: "/schedule/", text: "Schedule"}
  - {permalink: "/speakers/", text: "Speakers"}
