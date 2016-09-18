@@ -11,10 +11,40 @@
   service: true
 -
   id: 001
-  title: "Some awesome session"
+  title: "Something Rajneesh"
   description: "Holly molly this is out of the world and can make things amazing."
   subtype: presentation
   speakers: [1]
+  language: en
+  complexity: "Intermediate" 
+  presentation: "https://speakerdeck.com/XXXXXXXXX"
+  video: "//www.youtube.com/embed/vXXXXXXXXXXX"
+-
+  id: 002
+  title: "Oh Naveen"
+  description: "Holly molly this is out of the world and can make things amazing."
+  subtype: presentation
+  speakers: [2]
+  language: en
+  complexity: "Intermediate" 
+  presentation: "https://speakerdeck.com/XXXXXXXXX"
+  video: "//www.youtube.com/embed/vXXXXXXXXXXX"
+-
+  id: 003
+  title: "So Shekhar"
+  description: "Holly molly this is out of the world and can make things amazing."
+  subtype: presentation
+  speakers: [3]
+  language: en
+  complexity: "Intermediate" 
+  presentation: "https://speakerdeck.com/XXXXXXXXX"
+  video: "//www.youtube.com/embed/vXXXXXXXXXXX"
+-
+  id: 004
+  title: "Blockchain and it's internals"
+  description: "Holly molly this is out of the world and can make things amazing."
+  subtype: presentation
+  speakers: [4]
   language: en
   complexity: "Intermediate" 
   presentation: "https://speakerdeck.com/XXXXXXXXX"

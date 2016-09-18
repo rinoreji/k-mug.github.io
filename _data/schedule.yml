@@ -1,23 +1,28 @@
 - 
-  date: "2016-06-24"
-  dateReadable: "July 24"
+  date: "2016-09-24"
+  dateReadable: "Sept 24"
   tracks: 
     - {title: "Windows", color: "#90be4e"}
     - {title: "Web & Cloud", color: "#03a9f4"}
     - {title: "Others", color: "#e91e63"}
   timeslots:
     - {
-    	startTime: "10:00",
-    	endTime: "10:45",
-    	sessionIds: [001, 001, 001]
+    	startTime: "09:00",
+    	endTime: "09:30",
+    	sessionIds: [001, 404, 404]
     }
     - {
-        startTime: "11:00",
-        endTime: "11:45",
-        sessionIds: [001, 404, 001]
+        startTime: "09:35",
+        endTime: "10:30",
+        sessionIds: [404, 002, 404]
     }
     - {
-    	startTime: "12:00",
-    	endTime: "11:45",
-    	sessionIds: [001]
+    	startTime: "10:35",
+    	endTime: "11:30",
+    	sessionIds: [003, 404, 404]
+    }
+    - {
+    	startTime: "11:35",
+    	endTime: "12:30",
+    	sessionIds: [404, 404, 004]
     }

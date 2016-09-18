@@ -62,3 +62,11 @@
         margin: 0 7px;
     }
 }
+
+iframe.slack {
+    border: 0;
+    height: 400px;
+    margin-left: -50px;
+    overflow-y: hidden;
+    width: 400px;
+}

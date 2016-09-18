@@ -1,9 +1,48 @@
 - 
   id: 1
-  name: "John"
+  name: "Rajneesh"
+  surname: "Doe"
+  company: "Orion India Systems"
+  title: "Job title"
+  bio: "So this is a a field where i'm thinking about '"
+  thumbnailUrl: xxx.jpg
+  rockstar: true
+  ribbon: 
+    - {abbr: "K-MUG", title: "Kerala Microsoft Users Group", url: "https://some.com/"}
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+XXXXXXX/"}
+- 
+  id: 2
+  name: "Naveen"
   surname: "Doe"
   company: "Some Company"
-  title: "Some guy"
+  title: "Job title"
+  bio: "So this is a a field where i'm thinking about '"
+  thumbnailUrl: xxx.jpg
+  rockstar: true
+  ribbon: 
+    - {abbr: "K-MUG", title: "Kerala Microsoft Users Group", url: "https://some.com/"}
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+XXXXXXX/"}
+- 
+  id: 3
+  name: "Shekhar"
+  surname: "Doe"
+  company: "Orion India Systems"
+  title: "Job title"
+  bio: "So this is a a field where i'm thinking about '"
+  thumbnailUrl: xxx.jpg
+  rockstar: true
+  ribbon: 
+    - {abbr: "K-MUG", title: "Kerala Microsoft Users Group", url: "https://some.com/"}
+  social: 
+    - {name: "google-plus", link: "https://plus.google.com/+XXXXXXX/"}
+- 
+  id: 4
+  name: "Praseed"
+  surname: "Doe"
+  company: "Some Company"
+  title: "Job title"
   bio: "So this is a a field where i'm thinking about '"
   thumbnailUrl: xxx.jpg
   rockstar: true
